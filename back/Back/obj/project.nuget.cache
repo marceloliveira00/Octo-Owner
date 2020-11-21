@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8CQpLx9eHM0HyZY3rcn5W/VAoHyZYT0BFEket7yYssPQBkctT+FqOLyFzHfd9fYp9g3uy434FFM6+OVwZ9POyg==",
+  "dgSpecHash": "DgcN2yt9KJ229b9hhM+oiNsS9vuvQhQcyZpUWqliggZZdyCKPf2vlEeoTFy93+RQD4ZbF3m8mgvCEdmEXYP1ig==",
   "success": true,
   "projectFilePath": "C:\\Dev\\Avaliacao_Octo\\Back\\Back\\Back.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0\\microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
