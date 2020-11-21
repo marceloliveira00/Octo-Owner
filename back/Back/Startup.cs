@@ -25,6 +25,7 @@ namespace Back
             {
                 options.UseSqlServer("Data Source=.\\SQLEXPRESS;Initial Catalog=CRUD;Persist Security Info=True;Integrated Security=true;Connect Timeout=3000");
             });
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,7 +36,9 @@ namespace Back
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+
+            app.UseCors(option => option.AllowAnyOrigin());
 
             app.UseRouting();
 

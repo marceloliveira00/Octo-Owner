@@ -32,7 +32,7 @@ namespace Back.Controllers
             return Ok();
         }
 
-        [HttpDelete]
+        [HttpPost]
         [Route("deletarClientes/{Id}")]
         public IActionResult Delete(int Id)
         {
