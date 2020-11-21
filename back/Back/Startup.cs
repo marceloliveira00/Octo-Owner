@@ -38,7 +38,7 @@ namespace Back
 
             //app.UseHttpsRedirection();
 
-            app.UseCors(option => option.AllowAnyOrigin());
+            app.UseCors(option => option.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseRouting();
 
