@@ -9,10 +9,10 @@ Para executar a aplicação:
 
 ## Screenshots
 <div>
-  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/01.png">
-  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/02.png">
-  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/03.png">
-  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/04.png">
+  <img width="1920" height="1080" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/01.png">
+  <img width="1920" height="1080" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/02.png">
+  <img width="1920" height="1080" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/03.png">
+  <img width="1920" height="1080" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/04.png">
 </div>
 
 
