@@ -11,8 +11,8 @@ Para executar a aplicação:
 <div>
   <img width="854" height="480" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/01.png">
   <img width="854" height="480" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/02.png">
-  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/03.png">
-  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/04.png">
+  <img width="854" height="480" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/03.png">
+  <img width="854" height="480" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/04.png">
 </div>
 
 
