@@ -14,3 +14,8 @@ Para executar a aplicação:
   <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/03.png">
   <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/04.png">
 </div>
+
+
+## Tempo para a realização da Parte 1 da avaliação
+
+-- Sexta-Feira (20/11) até Domingo (22/11);
