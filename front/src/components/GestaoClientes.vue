@@ -73,52 +73,59 @@
       >
     </div>
     <div class="form" v-else>
-      <h1 id="label">{{addTitle}}</h1>
-      <vs-input label-placeholder="Nome" v-model="cliente.name" />
-      <vs-input label-placeholder="Sobrenome" v-model="cliente.lastName" />
-      <vs-input label-placeholder="CPF/CNPJ" v-model="cliente.cpf" v-mask="['###.###.###-##', '##.###.###/####-##']" />
-      <vs-input label-placeholder="Telefone" v-model="cliente.phoneNumber" v-mask="'(##) #####-####'"/>
-      <vs-select
-        class="phoneType"
-        label="Tipo de Telefone"
-        v-model="cliente.phoneNumberType"
-      >
-        <vs-select-item
-          :key="index"
-          :value="item.value"
-          :text="item.text"
-          v-for="(item, index) in options1"
-        />
-      </vs-select>
-      <vs-input label-placeholder="Endereço" v-model="cliente.address" />
-      <vs-select
-        class="addressType"
-        label="Tipo de Endereço"
-        v-model="cliente.addressType"
-      >
-        <vs-select-item
-          :key="index"
-          :value="item.value"
-          :text="item.text"
-          v-for="(item, index) in options2"
-        />
-      </vs-select>
-      <vs-button
-        @click.stop="enviarCliente()"
-        color="success"
-        type="filled"
-        icon="add"
-        class="add-bt"
-        >{{btnEdit}}</vs-button
-      >
-      <vs-button
-        @click.stop="home()"
-        color="primary"
-        type="filled"
-        icon="keyboard_return"
-        class="back-bt"
-        >Voltar</vs-button
-      >
+      <form>
+        <h1 id="label">{{addTitle}}</h1>
+        <vs-input label-placeholder="Nome" v-model="cliente.name" class="field"/>
+        <vs-input label-placeholder="Sobrenome" v-model="cliente.lastName" class="field"/>
+        <vs-input label-placeholder="CPF/CNPJ" v-model="cliente.cpf" v-mask="['###.###.###-##', '##.###.###/####-##']" class="field"/>
+        <vs-input label-placeholder="Telefone" v-model="cliente.phoneNumber" v-mask="'(##) #####-####'" class="field"/>
+        <vs-select
+          class="field"
+          label="Tipo de Telefone"
+          v-model="cliente.phoneNumberType"
+        >
+          <vs-select-item
+            :key="index"
+            :value="item.value"
+            :text="item.text"
+            v-for="(item, index) in options1"
+          />
+        </vs-select>
+        <vs-input label-placeholder="Endereço" v-model="cliente.address" class="field"/>
+        <vs-select
+          class="field"
+          label="Tipo de Endereço"
+          v-model="cliente.addressType"
+        >
+          <vs-select-item
+            :key="index"
+            :value="item.value"
+            :text="item.text"
+            v-for="(item, index) in options2"
+          />
+        </vs-select>
+        <vs-alert class="back-bt" title="Aviso" :active.sync="exibirAlert" color="danger">
+          Preencha todos os campos!
+        </vs-alert>
+        <div class="buttonsDiv">
+          <vs-button
+            @click.stop="enviarCliente()"
+            color="success"
+            type="filled"
+            icon="add"
+            class="add-bt"
+            >{{btnEdit}}</vs-button
+          >
+          <vs-button
+            @click.stop="home()"
+            color="primary"
+            type="filled"
+            icon="keyboard_return"
+            class="back-bt"
+            >Voltar</vs-button
+          >
+        </div>
+      </form>
     </div>
   </div>
 </template>
@@ -130,6 +137,7 @@ export default {
     return {
       users: [],
       exibirFormulario: false,
+      exibirAlert: false,
       options1: [
         { text: "Celular", value: "Celular" },
         { text: "Comercial", value: "Comercial" },
@@ -165,30 +173,35 @@ export default {
       this.btnEdit = "Adicionar";
     },
     enviarCliente() {
-      let requestName = "updateClientes"
+      if (!this.validarForm()) {
+        this.exibirAlert = true
+      } else {
+        let requestName = "updateClientes"
 
-      if(this.cliente.id === undefined)
-        requestName = "adicionarClientes"
+        if(this.cliente.id === undefined)
+          requestName = "adicionarClientes"
 
 
-      this.$http
-        .post(`http://localhost:49949/clientes/${requestName}`, this.cliente)
-        .then(() => {
-          this.exibirFormulario = false;
-          this.cliente = {};
-          this.carregarClientes();
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        })
-        .then(function () {
-          // always executed
-        });
-      
+        this.$http
+          .post(`http://localhost:49949/clientes/${requestName}`, this.cliente)
+          .then(() => {
+            this.exibirFormulario = false;
+            this.exibirAlert = false;
+            this.cliente = {};
+            this.carregarClientes();
+          })
+          .catch(function (error) {
+            // handle error
+            console.log(error);
+          })
+          .then(function () {
+            // always executed
+          });
+      }
     },
     home() {
       this.exibirFormulario = false;
+      this.exibirAlert = false;
       this.cliente = {};
       },
     removerCliente(tr) {
@@ -212,6 +225,25 @@ export default {
       this.addTitle = "Editar Cliente";
       this.btnEdit = "Salvar Alterações"
       
+    },
+
+    validarForm() {
+      if(this.cliente.name === undefined || this.cliente.name === '')
+        return false
+      else if(this.cliente.lastName === undefined || this.cliente.lastName === '')
+        return false
+      else if(this.cliente.cpf === undefined || this.cliente.cpf === '')
+        return false
+      else if(this.cliente.phoneNumber === undefined || this.cliente.phoneNumber === '')
+        return false
+      else if(this.cliente.phoneNumberType === undefined || this.cliente.phoneNumberType === '')
+        return false
+      else if(this.cliente.address === undefined || this.cliente.address === '')
+        return false
+      else if(this.cliente.addressType === undefined || this.cliente.addressType === '')
+        return false
+
+      return true
     }
   },
   
@@ -224,6 +256,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .field {
+    width: 100%;
+  }
+
+  .buttonsDiv {
+    display: flex;
+    justify-content: center;
+  }
+
   .clientsList-tb {
     text-align: left;
     margin-left: 300px;
@@ -246,11 +287,11 @@ export default {
 
   #label {
     margin-bottom: 50px;
-    
   }
 
   .add-bt {
     margin-top: 10px;
+    margin-right: 10px;
   }
 
   .back-bt {
