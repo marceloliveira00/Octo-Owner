@@ -6,6 +6,9 @@ Para executar a aplicação:
   3. Executar o script .sql localizado na pasta ".\insercaoClientes";
   4. Dentro da pasta "front", executar em terminal o comando "npm install";
 
+## Tempo para a realização da Parte 1 da avaliação
+
+-- Sexta-Feira (20/11) até Domingo (22/11);
 
 ## Screenshots
 <div>
@@ -14,8 +17,3 @@ Para executar a aplicação:
   <img width="854" height="480" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/03.png">
   <img width="854" height="480" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/04.png">
 </div>
-
-
-## Tempo para a realização da Parte 1 da avaliação
-
--- Sexta-Feira (20/11) até Domingo (22/11);
