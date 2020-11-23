@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DgcN2yt9KJ229b9hhM+oiNsS9vuvQhQcyZpUWqliggZZdyCKPf2vlEeoTFy93+RQD4ZbF3m8mgvCEdmEXYP1ig==",
+  "dgSpecHash": "F2ivbb3kRvsaHzm/rIAVsAl2iqtpVYo5cNKaQWhrjnmDw259xkhBWeKsq+AENYCycNznmiuXFvajmzcXB6bm8w==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\Avaliacao_Octo\\Back\\Back\\Back.csproj",
+  "projectFilePath": "C:\\Dev\\Octo-Owner\\back\\Back\\Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marce\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

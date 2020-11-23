@@ -7,7 +7,7 @@
         <template slot="thead">
           <vs-th> Nome </vs-th>
           <vs-th> Sobrenome </vs-th>
-          <vs-th> CPF </vs-th>
+          <vs-th> CPF/CNPJ </vs-th>
           <vs-th> Telefone </vs-th>
           <vs-th> Tipo de Telefone </vs-th>
           <vs-th> Endereço </vs-th>
@@ -76,7 +76,7 @@
       <h1 id="label">{{addTitle}}</h1>
       <vs-input label-placeholder="Nome" v-model="cliente.name" />
       <vs-input label-placeholder="Sobrenome" v-model="cliente.lastName" />
-      <vs-input label-placeholder="CPF" v-model="cliente.cpf" v-mask="'###.###.###-##'" />
+      <vs-input label-placeholder="CPF/CNPJ" v-model="cliente.cpf" v-mask="['###.###.###-##', '##.###.###/####-##']" />
       <vs-input label-placeholder="Telefone" v-model="cliente.phoneNumber" v-mask="'(##) #####-####'"/>
       <vs-select
         class="phoneType"

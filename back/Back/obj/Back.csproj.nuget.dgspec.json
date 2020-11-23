@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Avaliacao_Octo\\Back\\Back\\Back.csproj": {}
+    "C:\\Dev\\Octo-Owner\\back\\Back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Avaliacao_Octo\\Back\\Back\\Back.csproj": {
+    "C:\\Dev\\Octo-Owner\\back\\Back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Avaliacao_Octo\\Back\\Back\\Back.csproj",
+        "projectUniqueName": "C:\\Dev\\Octo-Owner\\back\\Back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Dev\\Avaliacao_Octo\\Back\\Back\\Back.csproj",
+        "projectPath": "C:\\Dev\\Octo-Owner\\back\\Back\\Back.csproj",
         "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Avaliacao_Octo\\Back\\Back\\obj\\",
+        "outputPath": "C:\\Dev\\Octo-Owner\\back\\Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
