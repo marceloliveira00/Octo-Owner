@@ -5,3 +5,12 @@ Para executar a aplicação:
   2. No console de gerenciador de pacotes do Visual Studio, executar o comando "update-database" para executar as migrações e criar tabelas;
   3. Executar o script .sql localizado na pasta ".\insercaoClientes";
   4. Dentro da pasta "front", executar em terminal o comando "npm install";
+
+
+## Screenshots
+<div>
+  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/01.png">
+  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/02.png">
+  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/03.png">
+  <img width="1280" height="720" align="left" src="https://github.com/marceloliveira00/Octo-Owner/blob/master/screenshots/04.png">
+</div>
